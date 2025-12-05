@@ -28,7 +28,7 @@ const p = (path) => `${BASE_PATH}${path}`;
 
 // --- 静态数据: 智能循环生成图片路径 ---
 const TOTAL_REQUIRED_SLOTS = 44; 
-const EXISTING_PHOTOS_COUNT = 31; 
+const EXISTING_PHOTOS_COUNT = 24; 
 const bodyPhotoPaths = [
   p('/photos/top.jpg'), 
   ...Array.from({ length: TOTAL_REQUIRED_SLOTS }, (_, i) => p(`/photos/${(i % EXISTING_PHOTOS_COUNT) + 1}.jpg`))
